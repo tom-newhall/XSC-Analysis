@@ -7,8 +7,8 @@ Affiliation   : UCLA, Asian Languages and Cultures
 Email         : tomnewhall@ucla.edu
 Reveal Theme  : serif
 transition    : 'fade'
-title {font-size: 200%}
 
+title {font-size: 175%}
 h1{ font-size: 150%}
 caption{color: grey; font-size: 14pt; }
 red{background-color: "red"}
@@ -132,9 +132,7 @@ Framed{padding:1ex; margin-top:1ex; background-color: Cornsilk; }
 
 - All of the above answers from previous research were arrived at through a process of 'close reading'
   - That is to say, a process by which a human *reads* the text, comes to an *understanding* of it, and then comes to some *interpretation* or *judgement* about its content.
-    - By-in-large, textual scholarship has been done with some version of this method since time immemorial
 - Nevertheless, this process of interpretation is subject to the same sorts of observation bias that any subjective observation could be.
-
 
 ~ begin Framed
 Can an approach that deals with the text as a whole arrive at the same conclusions, or perhaps new conclusions, in a way that bias can be more strictly controlled?
@@ -146,11 +144,8 @@ Can an approach that deals with the text as a whole arrive at the same conclusio
 
 - In a 2013 book by the same title, Franco Moretti promotes 'distant reading', the concept that texts can be studied as part of a larger canon of literature.
   - This approach is 'distant' in the sense it seeks to look at a whole text or group of texts from a metaphorical 'distance'
-  - rather than 'up-close' at individual works, or passages.
 - Because of the sheer volume of text produced by humans, this is practically impossible to do for any one scholar studying any one corpus or genre of texts.
   - However, computers can 'read' and analyze vast tracts of text very quickly.
-    - This property makes text analysis suitable for such an approach
-    - However, we have to adjust our research question in order to make it suitable for text analysis
 
 
 ## Functionalization of the question again
@@ -163,8 +158,6 @@ Can an approach that deals with the text as a whole arrive at the same conclusio
   - For example, in English, articles such as *"the"* and *"of"* appear most commonly 
     - However, these words tell us relatively little about the content of the text itself.
 - Therefore, we need to 'filter' out common words, and look for terms that are *relatively* more frequent than they are in similar texts in general
-  - Words are more important in a given text if they are relatively more common in that text than in texts in general 
-
 
 # Term Frequency - Inverse Document Frequency (tf-idf)
 
@@ -177,87 +170,117 @@ The importance of a term in a text `=` the frequency of that term in that text `
   - However, the specifics of the implementation here differ from more sophisticated versions of this approach 
 
 ## A corpus for comparison
+
+~ begin Columns
+~~ Begin Column
 - As previously mentioned, Daoxuan's _Xingshi chao_ is a commentarial text
   - This means that, similar to modern academic writing, it cites and comments on many other texts
   - The sources of Daoxuan's citations have been extensively studied by Satō (1986, pp. 90-96)
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped]
-~
+~~ End Column
+~ End Columns
 
-[Sato XSC chart p. 90 cropped]: images/Sato-XSC-chart-p.-90-cropped.jpg "Sato XSC chart p. 90 cropped" {width: 400px; margin-bottom: 10em; }
+
+[Sato XSC chart p. 90 cropped]: images/Sato-XSC-chart-p.-90-cropped.jpg "Sato XSC chart p. 90 cropped" { max-width: 90%; }
 
 ## Satō's chart 
 
-  - Here, the rows of the chart correspond to the preface and 30 chapters of the _Commentary_
-
-~ Center {margin-bottom: 10em;}
+~ begin Columns
+~~ Begin Column
+- Here, the rows of the chart correspond to the preface and 30 chapters of the _Commentary_
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped rows highlighted]
+~~ End Column
+~ End Columns
 
-[Sato XSC chart p. 90 cropped rows highlighted]: images/Sato-XSC-chart-p.-90-cropped-rows-highlighted.jpg "Sato XSC chart p. 90 cropped rows highlighted" { width:400px; }
-~
+[Sato XSC chart p. 90 cropped rows highlighted]: images/Sato-XSC-chart-p.-90-cropped-rows-highlighted.jpg "Sato XSC chart p. 90 cropped rows highlighted" { max-width: 90%; }
 
 ## Satō's chart
-  - The columns correspond to the titles of works cited in the _Commentary_.
 
-~ Center
+~ begin Columns
+~~ Begin Column
+- The columns correspond to the titles of works cited in the _Commentary_.
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped columns highlighted]
+~~ End Column
+~ End Columns
 
-[Sato XSC chart p. 90 cropped columns highlighted]: images/Sato-XSC-chart-p.-90-cropped-columns-highlighted.jpg "Sato XSC chart p. 90 cropped columns highlighted" { width:400px; }
-~
+[Sato XSC chart p. 90 cropped columns highlighted]: images/Sato-XSC-chart-p.-90-cropped-columns-highlighted.jpg "Sato XSC chart p. 90 cropped columns highlighted" { max-width: 90%; }
 
 ## Satō's chart
-
+~ begin Columns
+~~ Begin Column
 - The numbers refer to the number of times a work is cited in a particular chapter
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped numbers highlighted]
+~~ End Column
+~ End Columns
 
-~
-
-[Sato XSC chart p. 90 cropped numbers highlighted]: images/Sato-XSC-chart-p.-90-cropped-numbers-highlighted.jpg "Sato XSC chart p. 90 cropped numbers highlighted" { width: 400px; }
+[Sato XSC chart p. 90 cropped numbers highlighted]: images/Sato-XSC-chart-p.-90-cropped-numbers-highlighted.jpg "Sato XSC chart p. 90 cropped numbers highlighted" { max-width: 90%; }
 
 ## Satō's chart
 
+~ begin Columns
+~~ Begin Column
 - The bottom row of numbers gives the total number of citations of that work throughout the whole _Commentary_.
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped totals bar]
-~
+~~ End Column
+~ End Columns
 
-[Sato XSC chart p. 90 cropped totals bar]: images/Sato-XSC-chart-p.-90-cropped-totals-bar.jpg "Sato XSC chart p. 90 cropped totals bar" { width:400px; }
+
+[Sato XSC chart p. 90 cropped totals bar]: images/Sato-XSC-chart-p.-90-cropped-totals-bar.jpg "Sato XSC chart p. 90 cropped totals bar" { max-width: 90%; }
 
 ## Satō's chart
+
+~ begin Columns
+~~ Begin Column
   - The bottom row contains abbreviated bibliographic data about the work being cited.
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 90 cropped references]
+~~ End Column
+~ End Columns
 
-[Sato XSC chart p. 90 cropped references]: images/Sato-XSC-chart-p.-90-cropped-references.jpg "Sato XSC chart p. 90 cropped references" { width:400px;  }
-~
+[Sato XSC chart p. 90 cropped references]: images/Sato-XSC-chart-p.-90-cropped-references.jpg "Sato XSC chart p. 90 cropped references" { max-width: 90%; }
 
 ## Vinaya Citations in the _Commentary_
 
+~ begin Columns
+~~ Begin Column
 - Although most works are cited only once or twice in the _Commentary_, one set of texts is cited several hundred times each, (highlighted in red)
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 95 cropped]
-~
+~~ End Column
+~ End Columns
+
 
 ## Vinaya Citations in the _Commentary_
 
-  - Unsurprisingly, these texts are all translated Vinaya texts: the main source that Daoxuan is drawing upon in his analysis.
+~ begin Columns
+~~ Begin Column
+- Unsurprisingly, these texts are all translated Vinaya texts: the main source that Daoxuan is drawing upon in his analysis.
   - Specifically, the _Sifen lü_ 四分律 or "Four Part Vinaya" is cited 477 times, more commonly than any other Vinaya text. (highlighted in blue)
-
-~ Center
+~~ End Column
+~~ begin Column
 ![Sato XSC chart p. 95 cropped]
-~
-
-[Sato XSC chart p. 95 cropped]: images/Sato-XSC-chart-p.-95-cropped.jpg "Sato XSC chart p. 95 cropped" { width:400px; }
+~~ End Column
+~ End Columns
 
 ~ begin Framed
-  - Since these texts are cited by Daoxuan's text, these Vinaya texts can serve as a corpus to compare Daoxuan's work against.
+Since these texts are cited by Daoxuan's text, these Vinaya texts can serve as a corpus to compare Daoxuan's work against.
 ~end Framed
+
+[Sato XSC chart p. 95 cropped]: images/Sato-XSC-chart-p.-95-cropped.jpg "Sato XSC chart p. 95 cropped" { max-width: 90%; }
+
+
 
 ## Hypothesis
 
@@ -265,7 +288,7 @@ The importance of a term in a text `=` the frequency of that term in that text `
 In essence, we hypothosize that if a word appears relatively more frequenly in Daoxuan's work than it does in the Vinaya texts he cites, it should be a relatively more important concept to Daoxuan.
 ~ end framed
 
-And in this way, we seek to make an inroad to the questions of "What concepts were important in Daoxuan's text?" and "What was Daoxuan trying to say?"
+- And in this way, we seek to make an inroad to the questions of "What concepts were important in Daoxuan's text?" and "What was Daoxuan trying to say?"
 
 # Procedure and findings
 
@@ -395,7 +418,7 @@ for characters in range(0,len(input_string)): # iterates through the input strin
 
 - An alternative approach to finding words in the text is to use a list of words that are likely to be found in the text; i.e. a dictionary. 
 - Several dictionaries have been made available through the [DILA Glossaries project](http://glossaries.dila.edu.tw/?locale=en)
-  - Part of the [digital archives project of the Dhara Drum Institute of Liberal Arts (DILA)](https://lic.dila.edu.tw/en/node/12986#/tab1/cbeta)
+  - Part of the [digital archives project of the Dharma Drum Institute of Liberal Arts (DILA)](https://lic.dila.edu.tw/en/node/12986#/tab1/cbeta)
 
 ## Ding Fubao's _Dictionary of Buddhist Studies_
 
@@ -539,7 +562,7 @@ We can visualize the frequency data for the _Commentary_ using a Word Cloud,
 
 [XSC word cloud]: images/XSC-word-cloud.jpg "XSC word cloud" { width:auto; max-width:90% }
 
-# Bar Chart Visualization
+## Bar Chart Visualization
 
 Or a bar chart,
 
@@ -548,7 +571,7 @@ Or a bar chart,
 
 [T1804 Word vs. freq bar chart partial]: images/T1804-Word-vs.-freq-bar-chart-partial.jpg "T1804 Word vs. freq bar chart partial" { width:auto; max-width:90% }
 
-# As a spreadsheet
+## Visualiz As a spreadsheet
 
 But perhaps the most useful is by looking at the data itself:
 
@@ -649,10 +672,6 @@ By filtering out 1-grams we can get a better sense of the results
 - There are many names of texts that appear
   - This indicates the importance of texts in the _Xingshi chao_
     - However, these terms could be filtered out in order to find more meaningful terms
-  - In particular, the entries for _Wubai wen_ 五百問 and _Mingliao lun_ 明了論 are interesting because these also appeared in Satō's chart
-    - _Wubai wen_ 五百問 is cited 84 times according to Satō (p. 91), exactly corresponding to our results
-    - _Mingliao lun_ 明了論 is cited 62 times according to Satō (p. 96), one off from our results (61)
-      - We have close, if not perfect correspondance between the Satō's data and our own, indicating a high degree of reliability of Satō's data
 
 ## Observations (IV)
 - Most words are concrete nouns; there are relatively few 'grammar words' in these lists
@@ -670,17 +689,16 @@ By filtering out 1-grams we can get a better sense of the results
 
 - By comparing this text to other texts, can we try to 'filter out' some of the less relevant data and focus on more relevant facts about the text?
 
-## Top 10 2-character words in the _Four-Part Vinaya_
+## Most frequent 2-character words in the _Four-Part Vinaya_
 
-We can also visualize the word frequencies of the _Four-Part Vinaya_ text:
+- We can also visualize the word frequencies of the _Four-Part Vinaya_ text:
 
 ~ Center
 ![T1428 Word vs. Count top 30 or so]
 ~
 [T1428 Word vs. Count top 30 or so]: images/T1428-Word-vs.-Count-top-30-or-so.jpg "T1428 Word vs. Count top 30 or so" { width:auto; max-width:80% }
 
-
-Looking more closely the top ten most common 2-character words, we see the following:
+## 10 Most frequent 2-character words in the _Four-Part Vinaya_ (II)
 
 | Word | Count | Freq           | Meaning                                                                                          |
 |------|-------|----------------|--------------------------------------------------------------------------------------------------|
@@ -701,7 +719,7 @@ The full dataset can be downloaded [here](https://github.com/tom-newhall/XSC-Ana
 
 ## Comparing Bigrams
 
--Comparing only 2-character words ,we find that many of the most common words in the _Vinaya_ are the same as the _Commentary_
+-Comparing only 2-character words, we find that many of the most common words in the _Vinaya_ are the same as the _Commentary_
 
 | Commentary      |                | Four-part Vinaya |                |
 |-----------------|----------------|------------------|----------------|
@@ -807,10 +825,6 @@ This can be exported as a [csv file](https://github.com/tom-newhall/XSC-Analysis
   - _lü_ 律 'Vinaya';
   - _seng_ 僧 'monk';
 - Several of these words appeared in the highest frequencies of the _Vinaya_ and _Commentary_ alone, indicating that high frequency words were likely to also have the frequency difference between the two texts
-  - Other than that, there is no discernable pattern to these high-difference words; they seem like words that would be common across Buddhist literature, and do not appear to indicate any particular features of this text.
-
-- The words _sengqi_ 僧祇 and _sifen_ 四分 also appear frequently
-  - These are names of texts, and we would expect them to appear only incidentally in the _Vinaya_ text, which does not cite other texts like the _Commentary_ does.
 
 ## Negative frequency differences
 
@@ -1019,320 +1033,47 @@ In sum, we have three results:
 
 # Bibliography and Acknowledgements
 
-The author would first like to thank Kristian Allen of the UCLA Data Science Center for help getting started with Python.
+The author would like to thank Kristian Allen of the UCLA Data Science Center.
 
-This presentation was made using [Madoko](https://www.madoko.net/), using [RevealJS](https://github.com/hakimel/reveal.js/), and [Tableau](https://www.tableau.com/). Source code for this file can be found at
+This presentation was made using [Madoko](https://www.madoko.net/), using [RevealJS](https://github.com/hakimel/reveal.js/), and [Tableau](https://www.tableau.com/). Source code (written in Markdown) for this file can be found [here](https://github.com/tom-newhall/XSC-Analysis/blob/master/Topic%20Detection%20for%20Chinese%20Buddhist%20Texts/Topic%20Detection%20for%20Chinese%20Buddhist%20Texts.mdk).
 
-Yuanzhao 元照. _Sifenlü xingshichao ke_ 四分律行事鈔科. CBETA Edition, X43 no. 738.
+~ Begin bibliography
 
-Editors of CBETA. _Chinese Buddhist Electronic Text Association (CBETA)_ http://www.cbeta.org/
+Clarke, Shayne. “Vinayas.” In _Brill’s Encyclopedia of Buddhism_, edited by Jonathan A. Silk, Oskar von Hinüber, and Vincent Eltschinger, 60–87. Brill, 2015.
 
-Editors of CBETA. _CBETA Online Reader_ http://cbetaonline.dila.edu.tw/zh/T0001_001
+Dharma Drum Institute of Liberal Arts (DILA). _Digital Archives Project_ <https://lic.dila.edu.tw/en/node/12986#/tab1/cbeta>
 
-Clarke, Shayne. “Vinayas.” In Brill’s Encyclopedia of Buddhism, edited by Jonathan A. Silk, Oskar von Hinüber, and Vincent Eltschinger, 60–87. Brill, 2015.
+Ding Fubao 丁福保. _Foxue Dacidian_ 佛學大辭典 (Dictionary of Buddhist Studies). Digital version published by Dharma Drum Institute of Liberal Arts (DILA) http://glossaries.dila.edu.tw/glossaries/DFB?locale=en 
 
-Taisho
+Daoxuan 道宣. _Sifenlü shanfan buque xingshi chao_ 四分律刪繁補闕行事鈔. Taisho/CBETA edition.
+
+Editors of CBETA. _Chinese Buddhist Electronic Text Association (CBETA)_ <http://www.cbeta.org/>
+
+Editors of CBETA. _CBETA Online Reader_ <http://cbetaonline.dila.edu.tw/zh/T0001_001>
+
+Fujiyoshi Masumi 藤善真澄. Dōsenden no kenkyū 道宣伝の研究. Kyōto daigaku gakujutsu shuppankai 京都大学学術出版会. 2002.
 
 Heirman, Ann. “Vinaya: From India to China.” In _The Spread of Buddhism_, edited by Ann Heirman and Stephan Peter Bumbacher, 167–203. Leiden: Brill, 2007.
 
 Hirakawa Akira 平川彰. _Genshi bukkyō no kenkyū: Kyōdan soshiki no genkei_ 原始仏教の研究 : 教団組織の原型. Tokyo: Shunjunsha 春秋社, 1964. 
 
-Sturgeon, Donald, ed. The Chinese Text Project https://ctext.org
+Lavin, Matthew J. "Analyzing Documents with TF-IDF." _The Programming Historian_. 2019. <https://programminghistorian.org/en/lessons/analyzing-documents-with-tfidf>
 
-Donald Sturgeon, Digital Approaches to Text Reuse in the Early Chinese Corpus, Journal of Chinese Literature and Culture 2018 5(2)
-
-Donald Sturgeon. Digital Sinology: Modern Methods in Early China studies. https://digitalsinology.org/
-
-“Portrait of the Priest Daoxuan (Dosen) - EKokuhou.” accessed August 10, 2017 http://www.emuseum.jp/detail/100086/001/002?word=&d_lang=en&s_lang=&class=&title=&c_e=&region=&era=&cptype=&owner=&pos=1&num=1&mode=&century=#.
+Moretti, Franco. _Distant Reading_. London ; New York: Verso. 2013.
 
 Satō Tatsugen 佐藤達玄. _Chūgoku ni Okeru Kairitsu no Kenkyū_ 中国仏教における戒律の研究. 木耳社. 1986.
 
+Sturgeon, Donald, ed. The Chinese Text Project https://ctext.org
+
+Sturgeon, Donald. Digital Approaches to Text Reuse in the Early Chinese Corpus, Journal of Chinese Literature and Culture 2018 5(2)
+
+Sturgeon, Donald. Digital Sinology: Modern Methods in Early China studies. https://digitalsinology.org/
+
 Totsugu Kenshō 戸次顕彰. “Shibunritsu gyōjishō no bunkenteki seikaku ni tsuite『四分律行事鈔』の文献的性格について[The Literary Characteristics of the Sifenlu xingshi chao].” _Indogaku bukkyōgaku kenkyū_ 印度學佛教學研究 63 (December 2014): 11–15.
 
-Fujiyoshi Masumi 藤善真澄. Dōsenden no kenkyū 道宣伝の研究. Kyōto daigaku gakujutsu shuppankai 京都大学学術出版会. 2002.
+Veidlinger, Daniel, ed. _Digital Humanities and Buddhism: An Introduction_. Boston, MA: de Gruyter. 2019.
 
-<!--
+Yuanzhao 元照. _Sifenlü xingshichao ke_ 四分律行事鈔科. CBETA Edition, X43 no. 738.
 
-# Trigram comparison
+~ end bibliography
 
-| Commentary on Four-Part Vinaya |       |                 | Base Text (Four-part Vinaya) |       |                 |
-|--------------------------------|-------|-----------------|------------------------------|-------|-----------------|
-| Word                           | Count | Freq.           | Word                         | Count | Freq            |
-| 五百問                         | 84    | 0.0007155772266 | 比丘尼                       | 3473  | 0.01033171723   |
-| 明了論                         | 61    | 0.000519645367  | 突吉羅                       | 1542  | 0.004587246753  |
-| 波羅夷                         | 57    | 0.0004855702609 | 波逸提                       | 1032  | 0.003070063975  |
-| 突吉羅                         | 48    | 0.0004089012724 | 波羅夷                       | 655   | 0.001948538666  |
-| 波逸提                         | 44    | 0.0003748261663 | 具足戒                       | 501   | 0.001490408965  |
-| 比丘尼                         | 41    | 0.0003492698368 | 偷蘭遮                       | 495   | 0.001472559755  |
-| 僧伽梨                         | 41    | 0.0003492698368 | 沙彌尼                       | 426   | 0.00126729385   |
-| 摩那埵                         | 32    | 0.0002726008482 | 婆羅門                       | 329   | 0.0009787316355 |
-| 七日藥                         | 29    | 0.0002470445187 | 孤獨園                       | 266   | 0.0007913149393 |
-| 佛法僧                         | 26    | 0.0002214881892 | 僧伽藍                       | 258   | 0.0007675159938 |
-| 沙彌尼                         | 24    | 0.0002044506362 | 跋難陀                       | 248   | 0.0007377673118 |
-| 大比丘                         | 24    | 0.0002044506362 | 尼薩耆                       | 238   | 0.0007080186299 |
-| 功德衣                         | 24    | 0.0002044506362 | 摩那埵                       | 193   | 0.0005741495612 |
-| 優婆塞                         | 24    | 0.0002044506362 | 提婆達                       | 184   | 0.0005473757475 |
-| 自然界                         | 22    | 0.0001874130832 | 阿闍梨                       | 165   | 0.0004908532518 |
-| 阿闍梨                         | 19    | 0.0001618567536 | 如法治                       | 164   | 0.0004878783836 |
-| 尚闍梨                         | 18    | 0.0001533379771 | 優波離                       | 150   | 0.0004462302289 |
-| 偷蘭遮                         | 17    | 0.0001448192006 | 舍利弗                       | 144   | 0.0004283810198 |
-| 舍利弗                         | 16    | 0.0001363004241 | 阿羅漢                       | 140   | 0.000416481547  |
-| 具足戒                         | 16    | 0.0001363004241 | 阿蘭若                       | 112   | 0.0003331852376 |
-
-
-# 4+gram comparison
-
-| Commentary on Four-Part Vinaya |       |                 | Base Text (Four-part Vinaya) |       |                 |
-|--------------------------------|-------|-----------------|------------------------------|-------|-----------------|
-| Word                           | Count | Freq.           | Word                         | Count | Freq            |
-| 三千威儀                       | 14    | 0.0001192628711 | 六群比丘                     | 966   | 0.002873722674  |
-| 索欲問和                       | 10    | 8.52E-05        | 式叉摩那                     | 373   | 0.001109625836  |
-| 偏袒右肩                       | 9     | 7.67E-05        | 少欲知足                     | 363   | 0.001079877154  |
-| 十二頭陀                       | 8     | 6.82E-05        | 僧伽婆尸沙                   | 318   | 0.0009460080854 |
-| 心念口言                       | 7     | 5.96E-05        | 六群比丘尼                   | 266   | 0.0007913149393 |
-| 未受具人                       | 6     | 5.11E-05        | 給孤獨園                     | 266   | 0.0007913149393 |
-| 少欲知足                       | 6     | 5.11E-05        | 祇樹給孤獨園                 | 266   | 0.0007913149393 |
-| 四方僧物                       | 6     | 5.11E-05        | 迦留陀夷                     | 172   | 0.0005116773292 |
-| 右膝著地                       | 6     | 5.11E-05        | 尼薩耆波逸提                 | 161   | 0.0004789537791 |
-| 百一供身                       | 6     | 5.11E-05        | 白二羯磨                     | 149   | 0.0004432553607 |
-| 白二羯磨                       | 5     | 4.26E-05        | 右膝著地                     | 148   | 0.0004402804926 |
-| 波羅提木叉                     | 5     | 4.26E-05        | 白四羯磨                     | 124   | 0.0003688836559 |
-| 大界外相                       | 5     | 4.26E-05        | 沓婆摩羅子                   | 76    | 0.0002260899827 |
-| 波羅提提舍尼                   | 4     | 3.41E-05        | 沓婆摩羅                     | 76    | 0.0002260899827 |
-| 波利婆沙                       | 4     | 3.41E-05        | 十七群比丘                   | 50    | 0.0001487434096 |
-| 解脫道論                       | 4     | 3.41E-05        | 提婆達多                     | 49    | 0.0001457685415 |
-| 僧伽婆尸沙                     | 4     | 3.41E-05        | 波羅提提舍尼                 | 44    | 0.0001308942005 |
-| 無分別智                       | 3     | 2.56E-05        | 慈地比丘                     | 39    | 0.0001160198595 |
-| 二百五十戒                     | 3     | 2.56E-05        | 式叉迦羅尼                   | 37    | 0.0001100701231 |
-| 四事供養                       | 3     | 2.56E-05        | 波羅提木叉                   | 34    | 0.0001011455186 |
-
-
-
-
-    - For example, consider the following passage:
-    > 佛法增益，廣大、寔由師徒相攝。\
-    > The flourishing and development of the Buddha-dharma truly owes to the mutual dependence of the master and disciple. 
-
-  - Here, we are specifically interested in *what is unique about Daoxuan's work compared to other similar works?* as a way of approaching "what is Daoxuan trying to say" by asking *what is he trying to say that is different to other similar works*
-
-
-- the main *topics* of  We can first generalize the question "what was Daoxuan trying to say with this work?" to be a sub-set of the question "How can we come to understand some of the main topics of a work of non-fiction?"
-    - In this research we will use *comparative word frequency analysis* to analyze the _Xingshi chao_ and then compare these results the word frequencies of similar works.
-    - In theory, words that are on average more common in one text than another are thought to be more important in that text.
-    - Through this comparison we can start to hone in on the most important or uniqe *concepts* in one particular text
-
-
-  - Of course by doing so, we are fundamentally changing the problem
-
-## Method
-  - To do this we will analyze the frequencies of words in an _object text_ (in this case the _Xingshi chao_) against a representative _base text_ (the texts that the _Xingshi chao_ cites)
-
-
-## Methodology: The standard "discursive" approach to the question
-- There could be many approaches to answer a broad question such as "what is Daoxuan trying to say in the _Xingshi chao_" (?)
-  - A satisfactory answer to this questions calls for an analytic and discursive answer such as:
-~ Framed
-"In his _Xingshi chao_ Daoxuan argues that `X` should be understood as `Y` for reasons `A`, `B`, and `C`."
-~
-
-    - Although the actual form of the answer would very greatly depending on the author and the content of the answer itself, the above generalization should be broadly applicable to works of argumentative non-fiction.
-      - Although such a form relies on the assumption that Daoxuan is making a singular, sustained argument, rather than a series of arguments related by a single theme, which is a topic for a different paper.
-<new slide section, keeping above framed in place>
-  - In this example, the content of `X` and `Y` could perhaps be determined through algorithmic means, more complex *reasons* `A`, `B`, and `C` are certainly more difficult to determine algorithmically.
-<new slide section, keeping above framed in place>
-
-## Taking Wolfram Alpha as an Example of the current limits of the Computational approach for humanistic questions
-
-- The difficulties in parsing such analytic, discursive questions about humanistic data so can be seen with the well-known analytic search engine [_Wolfram Alpha_][https://www.wolframalpha.com/examples/society-and-culture/people/].
-  - Although this search engine can answer some *questions of fact* given to it, and return to the user *data* depicting the answer to those questions, it can not yet, for the most part supply *reasons for* or *interpretations of* that data.
-  - For example although the search engine can find [relative number of employees in IBM and GE from a certain year][https://www.wolframalpha.com/input/?i=number+of+IBM%2C+GE+employees+2009+to+2011&lk=3] it cannot yet return *analyses* of the data, and give *reasons* for why IBM's employees increased, while GE's decreased.
-
-- This is particularly clear, and problematic with humanistic questions:
-  - the search engine can analyze and find raw facts about a work or author, but cannot algorithmically supply the content of a given author or work for example.
-  - For example, using an analytic approch can [find texts by a given author][https://www.wolframalpha.com/input/?i=Lucy+Maud+Montgomery+notable+books&lk=3] relatively easily but [cannot tell us what those texts are *about*][https://www.wolframalpha.com/input/?i=what+is+anne+of+green+gables+about%3F] without resorting to human-generated encyclopedia articles.
-
-# Artificial Intelligence: Problems and Prospects
-- In sum:
-  - Questions that require rhetorical, theoretical, and philosophical answers such as "what is Daoxuan trying to say in the _Xingshi chao_"; cannot easily be answered with machines at the moment.
-    - Doing so would require a highly sophisticated artificial intelligence that could synthesize and interpret vast amounts of natural language data to produce optimal results.
-  - While in the future, answering such questions with artificial intelligence may be possible, there is some question as to, whether it would even be desirable have such questions answered by a machine.
-  - Should all questions be answerable automatically and algorithmically by a machine? Even humanistic questions requiring interpretation, judgement, and explanation such as the one posed here?
-
-# Theoretical underpinnings: Is the future of Humanities Human-less?: 
-
-- Although the purpose of this research is not to answer these questions directly, using digital methods to help answer such humanistic research questions raises the question of to what degree a computer can or should aid the researcher?
-    - Can there be a human-less humanities? Is there a world where all questions are answered by computers; and humans simply provide the questions but do not need to work to provide answers? Is the future of humanities simply creating more sophisticated algorithms to answer humanistic questions for us?
-    - What role will algorithmic or machine-aided methods of learning, or doing research will have in the future?
-    - These questions, though not directly relevant to the problem at hand, form the philosophical underpinning _raison d'être_ of the methodological explorations as this.
-
-~~ Notes
-Oh hey, these are some notes. They'll be hidden in your presentation, but you
-can see them if you open the speaker notes window (hit 's' on your keyboard).
-~~
-
-## Code
-
-Here is code, highlighted by Madoko 
-
-``` javascript
-function sqr( x ) {
-  var \(&pi;\) = 3.141593;
-  return x*x;  /* the square */
-}
-```
-We used `\(` and `\)` to escape into markdown to write &pi;.
-
-<!-- Example of nested vertical slides -->
-~ Begin Vertical { data-background:Gainsboro }
-
-## Vertical Slides {#vertical}
-Slides can be nested inside of other slides,
-try pressing [down].
-
-[![arrowdown]][down]
-
-
-[down]: # { .navigate-down }
-[arrowdown]: images/arrow.png "Down arrow" { width:178px; height:238px }
-
-## Basement Level 1
-Press down or up to navigate.
-
-## Basement Level 2
-
-Use `columns` to put blocks next to each other:
-
-~ Begin Columns
-~ Column { width:50% }
-A monarch butterfly (shown to the right)
-spends the winter in Mexico.
-~
-~ Column
-![butterfly]
-~
-~ End Columns
-
-[butterfly]: images/butterfly.png "A Monarch butterfly" { width:280px; vertical-align:middle }
-
-
-<!-- 
-For local background images, we need to have a reference to the image
-such that it's data gets embedded into the HTML page. We define
-it using "display=none" so it is hidden in the presentation. 
-We can then refer to the image in "data-background-image". 
--->
-
-![bfly]
-[bfly]: images/butterfly.png "Butterfly" { display:none }
-
-## Basement Level 3 { data-background-image:images/butterfly.png }
-That's it, time to go back up.
-
-[![arrowup]][back2]
-
-[arrowup]:  images/arrow.png "Up arrow" { width:178px; height:238px; transform:rotate(180deg) }
-[back2]:    #vertical { .image }
-
-~ End Vertical
-
-
-## Themes {#themes}
-
-Reveal.js comes with a few themes built in:
-
-* [Default](?#/themes)
-* [Sky](?theme=sky#/themes)
-* [Beige](?theme=beige#/themes)
-* [Serif](?theme=serif#/themes)
-* [Simple](?theme=simple#/themes)
-* [Night](?theme=night#/themes)
-* [Moon](?theme=moon#/themes)
-* [Solarized](?theme=solarized#/themes)
-
-Theme demos are loaded after the presentation which leads to flicker. In
-production you should load your theme in the `<head>` using a
-`<link>`.
-
-## Transitions { #transitions }
-
-You can select from different transitions, like:\
-[Cube](?transition=cube#/transitions) -
-[Page](?transition=page#/transitions) -
-[Concave](?transition=concave#/transitions) -
-[Zoom](?transition=zoom#/transitions) -
-[Linear](?transition=linear#/transitions) -
-[Fade](?transition=fade#/transitions) -
-[None](?transition=none#/transitions) -
-[Default](?#/transitions)
-
-
-
-## Pauses?
-
-Some pauses.
-
-* {.fragment} One
-* {.fragment} Two
-* {.fragment} Three
-
-And more:
-
-- Test 1
-- Test 2
-- Test 3
-{.fragmented}
-
-Cool!.
-
-~ Slide
-A slide with no header
-~
-
-
-## Point of View
-
-In Reveal.js Press **ESC** to enter the slide overview.
-
-Hold down alt and click on any element to zoom in on it using 
- [zoom.js]. Alt + click anywhere to zoom back out.
-
-
-[zoom.js]: http://lab.hakim.se/zoom-js
-
-
-## Works in Mobile Safari
-
-Try it out! You can swipe through the slides and pinch your way to the
-overview.
-
-
-## Printing
-
-You can print a `revealjs` presentation nicely from the browser.
-
-First give the `?print-pdf` or `?print-paper` query on your final
-presentation (in the browser address bar) and then print from the Chrome
-browser selecting `Save to PDF`.
-
-Read more about it at the [revealjs documentation](https://github.com/hakimel/reveal.js#pdf-export)
-
-## RevealJS library
-
-Normally, the `revealjs` library is loaded from a CDN but you can specify your
-own url using metadata:
-
-    Reveal Url: <my url>
-
-This can be useful when using a [server to run revealjs](https://github.com/hakimel/reveal.js#full-setup)
-where you may use something like:
-
-    @nopreview Reveal Url: http://localhost:8000/reveal.js
-
-
-## Thanks for looking :-)
-
-[slide]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.html
-[slide-mdk]: https://www.madoko.net/editor.html?#url=http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/slidedemo.mdk&options={"delayedUpdate":"true"}
-[slide-pdf]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.pdf
-
--->
